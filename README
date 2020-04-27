@@ -1,0 +1,5 @@
+# sshforward
+
+go build
+
+./sshforward -c cfg.json
