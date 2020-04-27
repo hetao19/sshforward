@@ -1,5 +1,14 @@
 # sshforward
+仿照ssh -L bind_address:port:host:hostport 实现的本地端口转发（借鉴网络实现）
+- 支持多个端口转发
 
 go build
 
 ./sshforward -c cfg.json
+
+// 使用
+telnet 127.0.0.1:8080
+> ...
+
+telnet 127.0.0.1:8090
+> ...
